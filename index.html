@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario Personal</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js" defer></script>
+    <link rel="icon" href="icon.jfif"> >
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#agregar">Agregar Concepto</a></li>
+                <li><a href="#lista">Conceptos</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Diccionario Personal</h1>
+            <p>Plataforma para organizar y compartir conceptos clave.</p>
+        </div>
+    </header>
+
+    
+    <section id="agregar" class="agregar">
+        <h2>Agregar Concepto</h2>
+        <form id="conceptoForm">
+            <label for="concepto"></label>
+            <input type="text" id="concepto" name="concepto" placeholder="Concepto" required aria-label="Concepto">
+            
+            <label for="descripcion"></label>
+            <textarea id="descripcion" name="descripcion" placeholder="Descripción" required aria-label="Descripción"></textarea>
+            
+            <label for="imagen"></label>
+            <input type="url" id="imagen" name="imagen" placeholder="URL de Imagen" aria-label="URL de Imagen">
+            
+            <label for="colaborador"></label>
+            <input type="text" id="colaborador" name="colaborador" placeholder="Colaborador" aria-label="Colaborador">
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensaje" class="mensaje"></div>
+    </section>
+
+    
+    <section id="lista" class="lista">
+        <h2>Lista de Conceptos</h2>
+        <ul id="concepto-list"></ul>
+    </section>
+
+   
+
+    
+    <section id="acerca" class="acerca">
+        <h2>Acerca de</h2>
+        <p>Esta plataforma fue creada para facilitar la organización y el intercambio de conceptos importantes dentro de un entorno colaborativo.</p>
+    </section>
+
+  
+    <footer>
+        <p>&copy; 2025 Diccionario Personal. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

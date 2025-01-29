@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e3ac;
+}
+
+h1 {
+    color: #3e2e03;
+    text-align: center; 
+}
+
+
+
+
+#concepto-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid; /* diseño responsivo */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cuadrículas responsivas */
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+.concepto-item {
+    position: relative;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; /* imagen de fondo no se desborde */
+    border: 2px solid transparent;
+}
+
+.concepto-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: #28a745;
+}
+
+.concepto-item {
+    background: rgba(0, 0, 0, 0.3); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.concepto-content {
+    position: relative;
+    z-index: 2; /* texto esté encima */
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s; 
+}
+
+.concepto-item:hover .concepto-content {
+    background: rgba(0, 0, 0, 0.9); 
+}
+
+
+
+#conceptoForm input,
+#conceptoForm textarea {
+    text-align: center;
+    display: block;   
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 8px auto;
+}
+
+button {
+   align-self: center;
+    
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el botón */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.mensaje {
+    margin-top: 10px;
+    color: #28a745; /* Color verde para mensajes de éxito */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    #concepto-list {
+        grid-template-columns: 1fr; /* Columna única en pantallas pequeñas */
+    }
+}
+
+/* Encabezado y barra de navegación */
+header {
+    background-color: #877d2e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .hero {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0; /* Agrega un poco de padding para evitar que se vea aplastada */
+    margin: 0;
+    position: fixed; /* Fija la barra en su lugar */
+    top: 0; /* Se fija en la parte superior */
+    width: 100%; /* Asegura que abarque todo el ancho de la página */
+    z-index: 1000; /* Asegura que quede encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para destacarla */
+}
+
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    background-color: #989595;
+    color: rgb(72, 69, 33);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #1e7e34;
+}
+
+
+.agregar {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agregar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Lista de conceptos */
+.lista h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+
+/* Sección "Acerca de" */
+.acerca {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer .social-media li {
+    margin: 0 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #28a745;
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+    
+    .contacto {
+        margin: 10px 20px;
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+}
