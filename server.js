@@ -2,8 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const db = require('./db');
 
+require('dotenv').config();
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
+const hoot = process.env.HOST;
 
 
 app.use(cors());
@@ -44,5 +47,5 @@ app.post('/concepto', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+    console.log(`Servidor corriendo en el puerto ${hoot}${port}`);
 });

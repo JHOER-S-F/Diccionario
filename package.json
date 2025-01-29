@@ -6,6 +6,7 @@
     "aws-ssl-profiles": "^1.1.2",
     "cors": "^2.8.5",
     "denque": "^2.1.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "generate-function": "^2.3.1",
     "iconv-lite": "^0.6.3",
@@ -19,7 +20,8 @@
     "path": "^0.12.7",
     "safer-buffer": "^2.1.2",
     "seq-queue": "^0.0.5",
-    "sqlstring": "^2.3.3"
+    "sqlstring": "^2.3.3",
+    "vite": "^6.0.11"
   },
   "scripts": {
     "start": "node server.js",
